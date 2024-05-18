@@ -14,6 +14,16 @@ public class SimpleFunctions {
         }
         return ans;
     }
+
+    // Task 4
+    public static int[] task4(int[] firstList, int[] secondList)
+    {
+        if(firstList.length != secondList.length) return null;
+        for(int i = 0;i < firstList.length ;i++) firstList[i] *= secondList[firstList.length-i-1];
+        return firstList; 
+    }
+    // End of Task 4
 }
 
 //method by g18s0463 used to add up the elements in a indexed by b
+
