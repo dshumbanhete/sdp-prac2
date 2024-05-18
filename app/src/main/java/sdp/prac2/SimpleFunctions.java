@@ -15,14 +15,14 @@ public class SimpleFunctions {
         return ans;
     }
 
-    // Task 4
+    // Task 4 - Lathitha
     public static int[] task4(int[] firstList, int[] secondList)
     {
         if(firstList.length != secondList.length) return null;
         for(int i = 0;i < firstList.length ;i++) firstList[i] *= secondList[firstList.length-i-1];
         return firstList; 
     }
-    // End of Task 4
+    // End of Task 4 -Lathitha
 }
 
 //method by g18s0463 used to add up the elements in a indexed by b
