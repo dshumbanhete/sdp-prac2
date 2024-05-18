@@ -16,11 +16,12 @@ public class SimpleFunctions {
     }
 
     // Task 4 - Lathitha
-    public static int[] task4(int[] firstList, int[] secondList)
+    public static List<Integer> task4(List<Integer> firstList, List<Integer> secondList)
     {
-        if(firstList.length != secondList.length) return null;
-        for(int i = 0;i < firstList.length ;i++) firstList[i] *= secondList[firstList.length-i-1];
-        return firstList; 
+        var newList = new ArrayList<Integer>();
+        if(firstList.size() != secondList.size()) return null;
+        for(int i = 0;i < firstList.size() ;i++) newList.add(firstList.get(i)*secondList.get(firstList.size()-i-1));
+        return newList; 
     }
     // End of Task 4 -Lathitha
 }

@@ -2,6 +2,8 @@ package sdp.prac2;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import java.util.Arrays;
+
 
 public class SimpleFunctionsTest {
     //Task 1 tests - Dean
@@ -17,14 +19,17 @@ public class SimpleFunctionsTest {
     @Test
     void runTask4Tests()
     {
-        // tests lists with different lengths
-        assertArrayEquals(null,SimpleFunctions.task4(new int[]{1,2},new int[]{1}));
-        // tests empty lists
-        assertArrayEquals(new int[]{},SimpleFunctions.task4(new int[]{},new int[]{}));
-        // tests when list a is the same as list b
-        assertArrayEquals(new int[]{5,8,9,8,5},SimpleFunctions.task4(new int[]{1,2,3,4,5},new int[]{1,2,3,4,5}));
-        // tests uncommon lists
-        assertArrayEquals(new int[]{0,-60,704,-756,900,539,5},SimpleFunctions.task4(new int[]{0,-10,11,21,-50,77,1},new int[]{5,7,-18,-36,64,6,2}));
+        // Test lists with different lengths
+        assertEquals(null, SimpleFunctions.task4(Arrays.asList(1, 2), Arrays.asList(1)));
+
+        // Test empty lists
+        assertEquals(Arrays.asList(), SimpleFunctions.task4(Arrays.asList(), Arrays.asList()));
+
+        // Test when list a is the same as list b
+        assertEquals(Arrays.asList(5, 8, 9, 8, 5),SimpleFunctions.task4(Arrays.asList(1, 2, 3, 4, 5), Arrays.asList(1, 2, 3, 4, 5)));
+
+        // Test uncommon lists
+        assertEquals(Arrays.asList(0, -60, 704, -756, 900, 539, 5),SimpleFunctions.task4(Arrays.asList(0, -10, 11, 21, -50, 77, 1), Arrays.asList(5, 7, -18, -36, 64, 6, 2)));
     }
     //End of Task 4 tests - Lathitha
 
