@@ -24,6 +24,7 @@ public class SimpleFunctions {
         return newList; 
     }
     // End of Task 4 -Lathitha
+    //Yuki testing something
 }
 
 //method by g18s0463 used to add up the elements in a indexed by b
