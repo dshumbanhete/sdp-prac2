@@ -24,7 +24,21 @@ public class SimpleFunctions {
         return newList; 
     }
     // End of Task 4 -Lathitha
-    //Yuki testing something
+
+    //Task5 - Yeukai - sorted list
+    public static boolean IsItSorted(List<Integer> list) {
+        if (list.isEmpty() || list == null) {
+            return true; //if the list is empty then return true
+        }
+
+        for (int i = 0; i < list.size() -1; i++) {
+            if (list.get(i) > list.get(i+1)) {
+                return false; //if any element is greater than the element after it, return false
+            }    
+        }
+        return true; //if elemnets are all in order then return true
+    }
+
 }
 
 //method by g18s0463 used to add up the elements in a indexed by b
