@@ -13,6 +13,20 @@ public class SimpleFunctions {
             }
         }
         return ans;
+    } 
+    //TASK2
+    public static ArrayList<String> task2(ArrayList<String> input){ // by g21s1812
+
+        ArrayList<String>output = new ArrayList<>();// create a new arraylist 
+        
+        for(int i=0;i<input.size();i++){
+            String element = input.get(i);// get one element at a time
+            if(element.length()>0){ // if length of element is greater than 0
+                output.add(element.substring(1)); // add element in the arraylist starting from character 2
+            }
+        }
+       
+        return output; 
     }
 
     // Task 4 - Lathitha
