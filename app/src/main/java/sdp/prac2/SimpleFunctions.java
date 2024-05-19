@@ -26,13 +26,13 @@ public class SimpleFunctions {
     // End of Task 4 -Lathitha
 
     //Task5 - Yeukai - sorted list
-    public static boolean IsItSorted(List<Integer> list) {
-        if (list.isEmpty() || list == null) {
+    public static boolean IsItSorted(List<Integer> list) { //returns a boolean - true or false
+        if (list.isEmpty() || list == null) { //if the list is empty
             return true; //if the list is empty then return true
         }
 
-        for (int i = 0; i < list.size() -1; i++) {
-            if (list.get(i) > list.get(i+1)) {
+        for (int i = 0; i < list.size() -1; i++) { //for loop
+            if (list.get(i) > list.get(i+1)) { //if statement
                 return false; //if any element is greater than the element after it, return false
             }    
         }
