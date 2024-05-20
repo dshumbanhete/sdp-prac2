@@ -1,6 +1,5 @@
 package sdp.prac2;
 import java.util.*;
-import java.util.ArrayList;
 
 
 public class SimpleFunctions {
@@ -39,6 +38,17 @@ public class SimpleFunctions {
     }
     // End of Task 4 -Lathitha
     //Yuki testing something
+
+    // Task 6 - Alisha (g22s7874)
+    public static List<Integer> task6(List<Integer> numbers) {
+        List<Integer> result = new ArrayList<>();
+        for (int number : numbers) {
+            int rounded = ((number + 99) / 100) * 100;
+            result.add(rounded);
+        }
+        return result;
+    }
+    // End of Task 6 - Alisha
 }
 
 //method by g18s0463 used to add up the elements in a indexed by b
