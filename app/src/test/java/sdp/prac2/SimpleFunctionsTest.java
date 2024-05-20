@@ -1,5 +1,6 @@
 package sdp.prac2;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -13,11 +14,19 @@ public class SimpleFunctionsTest {
     public void testTask1_WithValidIndices() {
         // Arrange: Set up the input arrays and the SimpleFunctions instance
         SimpleFunctions sf = new SimpleFunctions();
-        int[] a = {10, 20, 30, 40, 50}; // Array 'a' with integers
-        int[] b = {0, 2, 4}; // Array 'b' with valid indexes
+        ArrayList<Integer> a =new ArrayList<>(); 
+        a.add(10);
+        a.add(20);
+        a.add(30);
+        a.add(40); 
+        a.add(50); // Array 'a' with integers
+        ArrayList<Integer> b = new ArrayList<>();
+        b.add(0);
+        b.add(2);
+        b.add(4); // Array 'b' with valid indexes
 
         // Act: Call Task1 method with the input arrays
-        int result = sf.Task1(a, b);
+        int result = (int) sf.Task1(a, b);
 
         // Assert: Check if the result is the expected sum of elements at specified indexes
         assertEquals(90, result); // Expected result is 10 + 30 + 50 = 90
@@ -27,18 +36,66 @@ public class SimpleFunctionsTest {
     public void testTask1_WithOutOfRangeIndices() {
         // Arrange: Set up the input arrays and the SimpleFunctions instance
         SimpleFunctions sf = new SimpleFunctions();
-        int[] a = {10, 20, 30, 40, 50}; // Array 'a' with integers
-        int[] b = {1, 5, 3}; // Array 'b' with one out-of-range index (5)
+        ArrayList <Integer> a =new ArrayList<>(); // Array 'a' with integers
+        a.add(10);
+        a.add(20);
+        a.add(30);
+        a.add(40); 
+        a.add(50);
+        ArrayList <Integer> b = new ArrayList<>(); // Array 'b' with one out-of-range index (5)
+        b.add(1);
+        b.add(5);
+        b.add(3);
 
         // Act: Call Task1 method with the input arrays
-        int result = sf.Task1(a, b);
+        int result = (int) sf.Task1(a, b);
 
         // Assert: Check result are expected sum of elements at valid indices
         assertEquals(60, result); // Expected result is 20 + 40 = 60 (ignores index 5)
     }
     //End of Task 1 tests - for Dean by Alisha
+    //Task 2 tests - for Sandisa by Dean
+    public void testTask2_WithValidInput() {
+        // Arrange: Set up the input arrays 
+        SimpleFunctions sf2 = new SimpleFunctions();
+        ArrayList<String> a = new ArrayList<>(); // Array 'a' with strings
+        a.add("Farmer");
+        a.add("Fishmonger");
+        a.add("Butcher");
+        a.add("Baker");
+        ArrayList<String> expected = new ArrayList<>(); // Array 'expected' with altered strings
+        a.add("armer");
+        a.add("ishmonger");
+        a.add("utcher");
+        a.add("aker");
+        // Act: Call Task2 method with the input array
+        ArrayList<String> response = sf2.task2(a);
 
-    //Task 2 tests - Sandisa
+        // Assert: Check if the result is the same as the expected array
+        assertEquals(expected, response);
+    }
+    // Test case with some more odd inputs
+    @Test
+    public void testTask2_EdgeCases() {
+        // Arrange: Set up the input arrays and the SimpleFunctions instance
+        SimpleFunctions sf2 = new SimpleFunctions();
+        ArrayList<String> a = new ArrayList<>(); // Array 'a' with strings
+        a.add("!Tailor");
+        a.add(" Spaceexplorer");
+        a.add("  \n");
+        a.add(" ");
+        ArrayList<String> expected = new ArrayList<>(); // Array 'expected' with altered strings
+        a.add("Tailor");
+        a.add("Spaceexplorer");
+        a.add("\n");
+        // Act: Call Task1 method with the input arrays
+        ArrayList<String> response = sf2.task2(a);
+
+        // Assert: Check result are expected sum of elements at valid indices
+        assertEquals(expected, response); // Expected result is 20 + 40 = 60 (ignores index 5)
+    }
+    
+
     //End of Task 2 tests - Sandisa
 
     //Task 3 tests - Tessa

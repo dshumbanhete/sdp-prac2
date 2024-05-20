@@ -4,14 +4,14 @@ import java.util.*;
 //Task 1
 public class SimpleFunctions {
     public SimpleFunctions() {}
-    public int Task1(int[] a, int[] b){
-        int ans=0;
-        for (int i=0; i<b.length; i++){
-            if (b[i]<a.length){
-            ans+=a[b[i]];
+    public int Task1(ArrayList<Integer> a, ArrayList<Integer> b){
+        Integer ans=0;
+        for (int i=0; i<b.size(); i++){//iterate through the list using lists size as terminating condition
+            if (b.get(i)<a.size()){//check that the index is in bounds
+            ans+=a.get(b.get(i));//add the element to the accumulator
             }
         }
-        return ans;
+        return ans;//return the accumulator
     } 
     //method by g18s0463 used to add up the elements in a indexed by b
     //TASK2
