@@ -99,6 +99,33 @@ public class SimpleFunctionsTest {
     //End of Task 2 tests - Sandisa
 
     //Task 3 tests - Tessa
+   @Test
+    public void Task3Tests(){
+        SimpleFunctions tasks=new SimpleFunctions();
+        String data1="()))"; //input1 ,number of ( and ) not matching
+        String data2="()";// input2, number of (and )  does match
+        String data3="((()))"; //input3 ,number of ( and ) not matching
+        String data4="(";//input4 ,number of ( and ) not matching
+        // expected results of the inputs
+        Boolean expected1=false; 
+        Boolean expected2=true;
+        Boolean expected3=true;
+        Boolean expected4=false;
+        // the actual results of the inputs
+        Boolean result1= tasks.task3(data1);
+        Boolean result2=tasks.task3(data2);
+        Boolean result2=tasks.task3(data3);
+        Boolean result2=tasks.task3(data4);
+        
+        assertEquals(expected1,result1);
+        assertEquals(expected2,result2);
+        assertEquals(expected3,result3);
+        assertEquals(expected4,result4);
+
+    }
+
+
+
     //End of Task 3 tests - Tessa
 
     //Task 4 tests - Lathitha
