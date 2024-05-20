@@ -1,7 +1,7 @@
 package sdp.prac2;
 import java.util.*;
 
-
+//Task 1
 public class SimpleFunctions {
     public SimpleFunctions() {}
     public int Task1(int[] a, int[] b){
@@ -13,6 +13,7 @@ public class SimpleFunctions {
         }
         return ans;
     } 
+    //method by g18s0463 used to add up the elements in a indexed by b
     //TASK2
     public static ArrayList<String> task2(ArrayList<String> input){ // by g21s1812
 
@@ -51,5 +52,5 @@ public class SimpleFunctions {
     // End of Task 6 - Alisha
 }
 
-//method by g18s0463 used to add up the elements in a indexed by b
+
 
