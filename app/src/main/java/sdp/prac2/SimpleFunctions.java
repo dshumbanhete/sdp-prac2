@@ -5,7 +5,7 @@ import java.util.*;
 public class SimpleFunctions {
     public SimpleFunctions() {}
 
-    public boolean isBracketMatched(String s) {
+    public boolean Task3(String s) {
         Stack<Character> stack = new Stack<Character>();
         for (int i = 0; i < s.length(); i++) {
             char curr = s.charAt(i);
