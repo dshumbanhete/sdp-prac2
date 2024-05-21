@@ -147,6 +147,8 @@ public class SimpleFunctionsTest {
     //End of Task 4 tests - Lathitha
 
     //Task 5 tests - Yuki
+    
+
     //End of Task 5 tests - Yuki
 
     //Task 6 tests - Alisha

@@ -38,6 +38,7 @@ public class SimpleFunctions {
         return newList; 
     }
     // End of Task 4 -Lathitha
+<<<<<<< HEAD
     //Yuki testing something
 
     // Task 6 - Alisha (g22s7874)
@@ -50,6 +51,23 @@ public class SimpleFunctions {
         return result;
     }
     // End of Task 6 - Alisha
+=======
+
+    //Task5 - Yeukai - sorted list
+    public static boolean IsItSorted(List<Integer> list) { //returns a boolean - true or false
+        if (list.isEmpty() || list == null) { //if the list is empty
+            return true; //if the list is empty then return true
+        }
+
+        for (int i = 0; i < list.size() -1; i++) { //for loop
+            if (list.get(i) > list.get(i+1)) { //if statement
+                return false; //if any element is greater than the element after it, return false
+            }    
+        }
+        return true; //if elemnets are all in order then return true
+    }
+
+>>>>>>> origin/g22r8653
 }
 
 
