@@ -6,17 +6,15 @@ public class SimpleFunctions {
     public SimpleFunctions() {}
 
     public boolean isBracketMatched(String s) {
-        int openCount = 0, closeCount = 0;
+        Stack<Character> stack = new Stack<Character>();
         for (int i = 0; i < s.length(); i++) {
             char curr = s.charAt(i);
             if (curr == '(') {
-                openCount++;
-            } else if (curr == ')') {
-                closeCount++;
+                stack.push(curr);
+            } else if (curr == ')' && !stack.isEmpty()) {
+                stack.pop();
             }
         }
-        return openCount == closeCount;
+        return stack.isEmpty();
     }
 }
-
-
