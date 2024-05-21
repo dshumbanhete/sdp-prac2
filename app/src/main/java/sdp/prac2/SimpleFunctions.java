@@ -37,26 +37,9 @@ public class SimpleFunctions {
         for(int i = 0;i < firstList.size() ;i++) newList.add(firstList.get(i)*secondList.get(firstList.size()-i-1));
         return newList; 
     }
-    // End of Task 4 -Lathitha
-<<<<<<< HEAD
-<<<<<<< HEAD
-    //Yuki testing something
+    // End of Task 4 -Lathitha 
 
-    // Task 6 - Alisha (g22s7874)
-    public static List<Integer> task6(List<Integer> numbers) {
-        List<Integer> result = new ArrayList<>();
-        for (int number : numbers) {
-            int rounded = ((number + 99) / 100) * 100;
-            result.add(rounded);
-        }
-        return result;
-    }
-    // End of Task 6 - Alisha
-=======
-=======
->>>>>>> origin/g22r8653
-
-    //Task5 - Yeukai - sorted list
+    //Task5 - Yeukai g22r8653 - sorted list
     public static boolean IsItSorted(List<Integer> list) { //returns a boolean - true or false
         if (list.isEmpty() || list == null) { //if the list is empty
             return true; //if the list is empty then return true
@@ -68,12 +51,20 @@ public class SimpleFunctions {
             }    
         }
         return true; //if elemnets are all in order then return true
+    } //End of task 5 -Yeukai
+    
+    // Task 6 - Alisha (g22s7874)
+    public List<Integer> task6(List<Integer> numbers) {
+        List<Integer> result = new ArrayList<>();
+        for (int number : numbers) {
+            int rounded = ((number + 99) / 100) * 100;
+            result.add(rounded);
+        }
+        return result;
     }
+    // End of Task 6 - Alisha
 
-<<<<<<< HEAD
->>>>>>> origin/g22r8653
-=======
->>>>>>> origin/g22r8653
+
 }
 
 
