@@ -2,6 +2,7 @@ package sdp.prac2;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
@@ -114,8 +115,8 @@ public class SimpleFunctionsTest {
         // the actual results of the inputs
         Boolean result1= tasks.task3(data1);
         Boolean result2=tasks.task3(data2);
-        Boolean result2=tasks.task3(data3);
-        Boolean result2=tasks.task3(data4);
+        Boolean result3=tasks.task3(data3);
+        Boolean result4=tasks.task3(data4);
         
         assertEquals(expected1,result1);
         assertEquals(expected2,result2);
@@ -147,10 +148,17 @@ public class SimpleFunctionsTest {
     //End of Task 4 tests - Lathitha
 
     //Task 5 tests - Yuki
-    
 
     //End of Task 5 tests - Yuki
 
-    //Task 6 tests - Alisha
-    //End of Task 6 tests - Alisha
+    //Task 6 tests - Alisha - Done by Yuki
+    @Test
+    public void testTask6_WithValidInput() {
+        SimpleFunctions sf = new SimpleFunctions();
+        List<Integer> numbers = Arrays.asList(150,250,350,450,550);
+        List<Integer> expected = Arrays.asList(200,300,400,500,600);
+        List<Integer> result = sf.task6(numbers);
+        assertEquals(expected, result);
+    }
+    //End of Task 6 tests - Alisha - Done by Yuki
 }
