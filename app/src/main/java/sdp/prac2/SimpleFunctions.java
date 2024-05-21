@@ -39,6 +39,7 @@ public class SimpleFunctions {
     }
     // End of Task 4 -Lathitha
 <<<<<<< HEAD
+<<<<<<< HEAD
     //Yuki testing something
 
     // Task 6 - Alisha (g22s7874)
@@ -52,6 +53,8 @@ public class SimpleFunctions {
     }
     // End of Task 6 - Alisha
 =======
+=======
+>>>>>>> origin/g22r8653
 
     //Task5 - Yeukai - sorted list
     public static boolean IsItSorted(List<Integer> list) { //returns a boolean - true or false
@@ -67,6 +70,9 @@ public class SimpleFunctions {
         return true; //if elemnets are all in order then return true
     }
 
+<<<<<<< HEAD
+>>>>>>> origin/g22r8653
+=======
 >>>>>>> origin/g22r8653
 }
 
