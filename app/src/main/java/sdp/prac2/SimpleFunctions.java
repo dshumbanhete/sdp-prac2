@@ -36,7 +36,8 @@ public class SimpleFunctions {
             char curr = s.charAt(i);
             if (curr == '(') {
                 stack.push(curr);
-            } else if (curr == ')' && !stack.isEmpty()) {
+            } else if (curr == ')') {
+                if (stack.isEmpty()) return false; //if we have a closing bracket but no corrosponding opening.
                 stack.pop();
             }
         }
