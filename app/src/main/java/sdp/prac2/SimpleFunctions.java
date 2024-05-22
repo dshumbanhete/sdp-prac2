@@ -30,7 +30,7 @@ public class SimpleFunctions {
     }
 
     //Task3 - Theresa - G22R8334
-    public boolean Task3(String s) { // takes a string s and returns if it is () bracket matched, true if yes, false if no.
+    public boolean task3(String s) { // takes a string s and returns if it is () bracket matched, true if yes, false if no.
         Stack<Character> stack = new Stack<Character>();
         for (int i = 0; i < s.length(); i++) {
             char curr = s.charAt(i);
