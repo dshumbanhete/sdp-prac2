@@ -99,7 +99,7 @@ public class SimpleFunctionsTest {
 
     //End of Task 2 tests - Sandisa
 
-    //Task 3 tests - Tessa
+    //Task 3 tests - for Tessa
    @Test
     public void Task3Tests(){
         SimpleFunctions tasks=new SimpleFunctions();
@@ -127,7 +127,7 @@ public class SimpleFunctionsTest {
 
 
 
-    //End of Task 3 tests - Tessa
+    //End of Task 3 tests - for Tessa
 
     //Task 4 tests - Lathitha
     @Test
@@ -147,9 +147,45 @@ public class SimpleFunctionsTest {
     }
     //End of Task 4 tests - Lathitha
 
-    //Task 5 tests - Yuki
+    //Task 5 tests - for Yuki, by Tessa
+    @Test
+    public void testTask5() {
+        assertEquals(
+            sdp.prac2.SimpleFunctions.IsItSorted(Arrays.asList()), //empty list
+            true
+        );
+        assertEquals(
+            sdp.prac2.SimpleFunctions.IsItSorted((null)), //null
+            true
+        );
+        assertEquals(
+            sdp.prac2.SimpleFunctions.IsItSorted(Arrays.asList(1,2,3)), //sorted list
+            true
+        );
+        assertEquals(
+            sdp.prac2.SimpleFunctions.IsItSorted(Arrays.asList(1,2,3,4,5,6,7,8,9,10,11,12)),//big sorted list
+            true
+        );
+        assertEquals(
+            sdp.prac2.SimpleFunctions.IsItSorted(Arrays.asList(-2,-1,0,1,2)),//sorted list with negatives
+            true
+        );
+        assertEquals(
+            sdp.prac2.SimpleFunctions.IsItSorted(Arrays.asList(1,3,2)),//unsorted list!!
+            false
+        );
+        assertEquals(
+            sdp.prac2.SimpleFunctions.IsItSorted(Arrays.asList(1,1,1,1,1,1,1,1)), //all the same!!
+            true
+        );
+        assertEquals(
+            sdp.prac2.SimpleFunctions.IsItSorted(Arrays.asList(-1,-2,-3,-4)),//backwards negatives
+            true
+        );
 
-    //End of Task 5 tests - Yuki
+    }
+
+    //End of Task 5 tests - for Yuki, by Tessa
 
     //Task 6 tests - Alisha - Done by Yuki
     @Test

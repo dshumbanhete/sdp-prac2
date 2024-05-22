@@ -61,7 +61,7 @@ public class SimpleFunctions {
         }
 
         for (int i = 0; i < list.size() -1; i++) { //for loop
-            if (list.get(i) > list.get(i+1)) { //if statement
+            if (list.get(i) >= list.get(i+1)) { //if statement
                 return false; //if any element is greater than the element after it, return false
             }    
         }
