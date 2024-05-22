@@ -57,7 +57,7 @@ public class SimpleFunctions {
 
     //Task5 - Yeukai g22r8653 - sorted list
     public static boolean IsItSorted(List<Integer> list) { //returns a boolean - true or false
-        if (list.isEmpty() || list == null) { //if the list is empty
+        if (list == null || list.isEmpty())  { //if the list is empty
             return true; //if the list is empty then return true
         }
 
