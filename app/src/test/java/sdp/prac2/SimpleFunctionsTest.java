@@ -180,7 +180,7 @@ public class SimpleFunctionsTest {
         );
         assertEquals(
             sdp.prac2.SimpleFunctions.IsItSorted(Arrays.asList(-1,-2,-3,-4)),//backwards negatives
-            true
+            false
         );
 
     }
